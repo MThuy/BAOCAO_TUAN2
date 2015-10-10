@@ -1,4 +1,4 @@
-#Trinh soan thao Vi trong Ubuntu
+#I. Trinh soan thao Vi trong Ubuntu
 
 #1. Tìm hiểu cách sử dụng trình soạn thảo vi
 
@@ -154,6 +154,31 @@ Y hoặc yy sao dòng hiện tại vào vùng đệm
 5yy sao 5 dòng vào vùng đệm
 Cách khác dùng để sao chép dòng :
 :5, 8 t 25 sao chép các dòng từ 5 tới 8 tới sau dòng 25
+
+# II. Một số lệnh cấu hình network trên ubuntu
+## Giao diện mạng:
+
+Mỗi máy tính cần có một card mạng Ethernet có dây hoặc không dây
+Nhận dạng bởi tên :ethX
+Xem có bao nhiêu giao diện Ethernet: -ifconfig a | grep eth
+ Xem tất cả các giao diện mạng: -sudo lshw ­class network
+ ## Cấu hình IP tạm thời
+
+• Sử dụng lệnh ifconfig để đặt địa chỉ IP
+
+• Xem tất cả giao diện mạng
+
+– ifconfig -a
+
+• Xem cấu hình hiện tại
+
+– ifconfig {ethX}
+– ifconfig eth0
+
+• Đặt cấu hình IP mới
+
+– ifconfig ethX IP-address netmask net-address
+– ifconfig eth0 192.168.1.2 netmask 255.255.255.0
 
   
   
